@@ -66,7 +66,7 @@ function machine.create(options)
     add_to_map(fsm.events[name].map, event)
   end
 
-  if options.callbacks != nil then
+  if options.callbacks ~= nil then
     for name, callback in pairs(options.callbacks) do
       fsm[name] = callback
     end
